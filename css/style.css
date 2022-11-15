@@ -3,11 +3,18 @@
   --second-color: #757575;
   --accent-color: #2196f3;
   --text-white: #ffffff;
+  --first-color: #2f303a;
+  --third-color: #188ce8;
+  --quarter-color: #2f303a;
+  --fifth-color: #000000;
+  --sixth-color: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--text-white);
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 .link {
   text-decoration: none;
@@ -19,22 +26,28 @@ body {
 header {
   background-color: var(--text-white);
 }
-.header-logo {
+.header-nav a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 .logo {
-  color: var(--accent-color);
+  color: var(--fifth-color);
 }
 .header-list .link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+.header-list .current {
+  color: var(--accent-color);
+}
+.header-list .portfolio {
+  color: var(--accent-color);
 }
 .header-list .link:hover,
 .header-list .link:focus {
@@ -42,7 +55,6 @@ header {
 }
 .cont-list .link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
@@ -53,7 +65,7 @@ header {
 }
 /*-----------HERO-----------*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--first-color);
 }
 .hero-title {
   font-weight: 900;
@@ -61,6 +73,7 @@ header {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--text-white);
 }
 .hero-btn {
@@ -77,27 +90,27 @@ header {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--third-color);
 }
 /*-----------Attributes-----------*/
 .title {
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--primary-text-color);
 }
 .title-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--second-color);
 }
 /*-----------Work-----------*/
 .work-title {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -106,6 +119,7 @@ header {
 }
 /*-----------Command-----------*/
 .command-title {
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -113,25 +127,41 @@ header {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.text {
-  font-weight: 400;
+.title-com {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  color: var;
+}
+.text-com {
+  font-size: 16px;
+  line-height: 1.18;
   color: var(--second-color);
 }
 /*-----------footer-----------*/
 footer {
-  background-color: #2f303a;
+  background-color: var(--quarter-color);
+}
+.footer-info .footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo-f {
+  color: var(--text-white);
 }
 .footer-mail,
 .footer-tel,
 .address-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71px;
-  letter-spacing: 0.03em;
 }
 .contact-list {
   list-style-type: none;
@@ -142,8 +172,10 @@ footer {
 }
 .footer-mail,
 .footer-tel {
-  color: var(--second-color);
+  color: var(--sixth-color);
 }
+.address-link:hover,
+.address-link:focus,
 .footer-mail:hover,
 .footer-mail:focus,
 .footer-tel:hover,
@@ -153,20 +185,18 @@ footer {
 .footer-logo {
   color: var(--text-white);
 }
-.header-logo {
-  color: #000000;
-}
 
 /*-----------Portfolio-----------*/
 .button-items .btn {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   cursor: pointer;
   border: none;
-
   color: var(--primary-text-color);
 }
 .button-items .btn:hover,
@@ -175,16 +205,18 @@ footer {
   color: var(--text-white);
   background-color: var(--accent-color);
 }
-.projects .title {
+.progects-title {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var (--primary-text-color);
 }
-.projects .title-text {
+.progects-text {
   color: var(--second-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
+  color: var (--second-color);
 }
