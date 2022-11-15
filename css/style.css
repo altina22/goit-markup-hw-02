@@ -38,11 +38,14 @@ header {
   color: var(--fifth-color);
 }
 .header-list .link {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-size: 14px;
   color: var(--primary-text-color);
 }
+
 .header-list .current {
   color: var(--accent-color);
 }
@@ -94,14 +97,10 @@ header {
 }
 /*-----------Attributes-----------*/
 .title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
-  color: var(--primary-text-color);
 }
 .title-text {
   line-height: 1.71;
@@ -109,32 +108,20 @@ header {
 }
 /*-----------Work-----------*/
 .work-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 /*-----------Command-----------*/
 .command-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 .title-com {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var;
 }
 .text-com {
   font-size: 16px;
@@ -147,11 +134,9 @@ footer {
 }
 .footer-info .footer-logo {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo-f {
@@ -206,17 +191,14 @@ footer {
   background-color: var(--accent-color);
 }
 .progects-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var (--primary-text-color);
+  color: var(--primary-text-color);
 }
 .progects-text {
-  color: var(--second-color);
   font-size: 16px;
   line-height: 1.9;
-  color: var (--second-color);
+  color: var(--second-color);
 }
